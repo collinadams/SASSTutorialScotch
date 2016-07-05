@@ -7,6 +7,30 @@ $container-width: 100%;
 $column-count: 4;
 $margin: 1%;
 
+$buttonColor: #2ecc71;
+$buttonDark: darken($buttonColor, 10%);
+$buttonDarker: darken($buttonDark, 10%);
+
+button {
+  background: $buttonColor;
+  border-radius: 3px;
+  box-shadow: 0px 5px 0px $buttonDark;
+  border: 0;
+  color: white;
+  font-size: 17px;
+  padding: 10px 30px;
+  display: inline-block;
+  outline: 0;
+  &:hover {
+    background: $buttonDark;
+    box-shadow: 0px 5px 0px $buttonDarker;
+  }
+  &:active {
+    box-shadow: none;
+    margin-top: 5px;
+  }
+}
+
 .container {
   width: $container-width;
 }
@@ -24,6 +48,8 @@ $margin: 1%;
 
 
 body {
+  text-align: center;
+  padding-top: 100px;
   $primaryColor: #ccc;
   background-color: $primaryColor;
   font-size: $firstValue;

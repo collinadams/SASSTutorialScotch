@@ -1,3 +1,20 @@
+button {
+  background: #2ecc71;
+  border-radius: 3px;
+  box-shadow: 0px 5px 0px #25a25a;
+  border: 0;
+  color: white;
+  font-size: 17px;
+  padding: 10px 30px;
+  display: inline-block;
+  outline: 0; }
+  button:hover {
+    background: #25a25a;
+    box-shadow: 0px 5px 0px #1b7943; }
+  button:active {
+    box-shadow: none;
+    margin-top: 5px; }
+
 .container {
   width: 100%; }
 
@@ -10,6 +27,8 @@
   margin: 0 1%; }
 
 body {
+  text-align: center;
+  padding-top: 100px;
   background-color: #ccc;
   font-size: 62.5%; }
 
