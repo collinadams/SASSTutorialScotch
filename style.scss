@@ -11,6 +11,8 @@ $buttonColor: #2ecc71;
 $buttonDark: darken($buttonColor, 10%);
 $buttonDarker: darken($buttonDark, 10%);
 
+@import 'reset';
+
 button {
   background: $buttonColor;
   border-radius: 3px;
@@ -45,14 +47,13 @@ button {
   margin: 0 $margin;
 }
 
-
-
 body {
   text-align: center;
   padding-top: 100px;
   $primaryColor: #ccc;
   background-color: $primaryColor;
   font-size: $firstValue;
+  font: 100% Helvetica, sans-serif;
 }
 
 p {
