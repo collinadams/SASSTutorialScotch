@@ -34,3 +34,15 @@ body {
 
 p {
   color: #eeffcc; }
+
+.first-component .text {
+  color: red; }
+
+.first-component .button {
+  color: orange; }
+
+.second-component .text {
+  color: blue; }
+
+.second-component .button {
+  color: purple; }

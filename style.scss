@@ -58,3 +58,20 @@ body {
 p {
   color: $primaryColor;
 }
+
+.first-component {
+  .text {
+    color: red;
+  }
+  .button {
+    color: orange;
+  }
+  @at-root .second-component {
+    .text {
+      color: blue;
+    }
+    .button {
+      color: purple;
+    }
+  }
+}
