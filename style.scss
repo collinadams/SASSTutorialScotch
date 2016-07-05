@@ -11,6 +11,12 @@ $buttonColor: #2ecc71;
 $buttonDark: darken($buttonColor, 10%);
 $buttonDarker: darken($buttonDark, 10%);
 
+@function getColumnWidth($width, $columns, $margin) {
+  @return ($width / $columns) - ($margin * 2);
+}
+
+// @function returns a value via @return, @mixin returns markup via @content
+
 @import 'reset';
 
 @mixin media($queryString) {
@@ -79,7 +85,7 @@ button {
 
 .col-4 {
 
-  width: ($container-width-orig / $column-count) - ($margin * 2);
+  width: getColumnWidth($container-width-orig, $column-count, $margin);
   background: #1abc9c;
   height: 200px;
   display: block;
