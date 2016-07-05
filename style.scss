@@ -3,8 +3,28 @@ $primaryColor: #eeffcc;
 $firstValue: 62.5%;
 $firstValue: 24px !default;
 
+$container-width: 100%;
+$column-count: 4;
+$margin: 1%;
+
+.container {
+  width: $container-width;
+}
+
+.col-4 {
+
+  width: ($container-width / $column-count) - ($margin * 2);
+  background: #1abc9c;
+  height: 200px;
+  display: block;
+  float: left;
+  margin: 0 $margin;
+}
+
+
+
 body {
-  $primaryColor: #ccc !global;
+  $primaryColor: #ccc;
   background-color: $primaryColor;
   font-size: $firstValue;
 }

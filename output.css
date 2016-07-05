@@ -1,6 +1,17 @@
+.container {
+  width: 100%; }
+
+.col-4 {
+  width: 23%;
+  background: #1abc9c;
+  height: 200px;
+  display: block;
+  float: left;
+  margin: 0 1%; }
+
 body {
   background-color: #ccc;
   font-size: 62.5%; }
 
 p {
-  color: #ccc; }
+  color: #eeffcc; }
